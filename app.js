@@ -36,10 +36,15 @@ passport.use(new localStrategy(User.authenticate()));
 
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
-     
-// mongoose.connect("mongodb://localhost/yelp_camp");
 
-mongoose.connect("mongodb://jagan:password@ds113775.mlab.com:13775/yelpcampjagan");
+console.log(process.env.DATABASEURL);
+    
+mongoose.connect(process.env.DATABASEURL);
+
+
+
+// mongoose.connect("mongodb://jagan:password@ds113775.mlab.com:13775/yelpcampjagan");
+
 
 app.use(bodyParser.urlencoded({extended: true}));
 

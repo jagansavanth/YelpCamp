@@ -43,9 +43,6 @@ var url = process.env.DATABASEURL || "mongodb://localhost/yelp_camp" ;
     
 mongoose.connect(url);
 
-// mongoose.connect("mongodb://jagan:password@ds113775.mlab.com:13775/yelpcampjagan");
-
-
 app.use(bodyParser.urlencoded({extended: true}));
 
 app.set("view engine", "ejs");

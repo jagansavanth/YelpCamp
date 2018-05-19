@@ -38,8 +38,10 @@ passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
 console.log(process.env.DATABASEURL);
+
+var url = process.env.DATABASEURL || "mongodb://localhost/yelp_camp" ;
     
-mongoose.connect(process.env.DATABASEURL);
+mongoose.connect(url);
 
 // mongoose.connect("mongodb://jagan:password@ds113775.mlab.com:13775/yelpcampjagan");
 

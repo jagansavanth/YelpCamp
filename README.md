@@ -8,7 +8,7 @@ HTML, CSS, JAVASCRIPT, BOOTSTRAP 3
 Back-End:
 NODEJS, EXPRESS
 database:
-MOGODB, MONGOOSE
+MONGODB, MONGOOSE
 --------------------------------------------------
 Along with npm, body-parser, passport, passport-local, passport-local-mongoose and few other such libraries.
 

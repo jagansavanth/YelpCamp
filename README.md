@@ -17,4 +17,4 @@ You can change this according to your server and machine. You can find this in a
 
 Hosted on Heroku and MongoLab servers.
 
-Still further improvements in UI will be made from time to time and will keep this updated.
+Still further improvements in UI are needed.
